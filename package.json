@@ -1,0 +1,59 @@
+{
+  "name": "@dannyfranca/common-types",
+  "version": "0.1.0",
+  "description": "Common type helpers to be used in many TypeScript projects.",
+  "license": "MIT",
+  "author": {
+    "name": "Danny França",
+    "email": "contato@dannyfranca.com"
+  },
+  "contributors": [
+    {
+      "name": "Danny França <contato@dannyfranca.com>"
+    }
+  ],
+  "main": "src/index.ts",
+  "repository": "https://github.com/dannyfranca/common-types",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit -w",
+    "lint": "eslint --ext .ts,.js --ignore-path .gitignore --fix src/**",
+    "publish": "npm publish --access public"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript",
+    "ts",
+    "common",
+    "types",
+    "interfaces",
+    "helpers"
+  ],
+  "bugs": {
+    "url": "https://github.com/dannyfranca/common-types/issues"
+  },
+  "homepage": "https://github.com/dannyfranca/common-types#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
+}
